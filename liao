@@ -1,0 +1,7 @@
+var marginb = parseInt(menu_content.style.marginBottom);
+									if( marginb<=parseInt("-"+select_menu_height) ){
+										menu_content.style.marginBottom = "0";
+										select_menu.style.visibility = "hidden";
+										clearInterval(timer);	
+									}else{
+										menu_content.style.marginBottom = (marginb-20)+"px";
