@@ -1,0 +1,11 @@
+	var menu_content = select_menu.firstChild;
+		if(navigator.userAgent.indexOf('MSIE')>=0){
+			menu_content.style.marginBottom = "-"+ select_menu.offsetHeight+"px";
+			var timer = setInterval(
+								function(){
+									var marginb = parseInt(menu_content.style.marginBottom);
+									if(marginb>=0){
+										menu_content.style.marginBottom = "0";
+										clearInterval(timer);	
+									}else{
+		
