@@ -1,0 +1,4 @@
+  this.restore_position = function(cookiename) {
+    if (!cookiename) {
+      cookiename = this.name + '_slideshow';
+    }
