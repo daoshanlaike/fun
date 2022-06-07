@@ -1,0 +1,4 @@
+      var next, prev, count;
+      next = this.current;
+      prev = this.current;
+      count = 0;
