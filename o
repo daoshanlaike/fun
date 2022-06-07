@@ -1,0 +1,8 @@
+      do {
+        if (++next >= this.slides.length) next = 0;
+        if (--prev < 0) prev = this.slides.length - 1;
+        this.slides[next].load();
+        this.slides[prev].load();
+      } while (++count < this.prefetch);
+    }
+  }
